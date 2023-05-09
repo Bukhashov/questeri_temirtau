@@ -38,14 +38,14 @@ const MainTabNavigator = ({navigation}) => {
                         color={color} 
                     />
                 } 
-                else if(route.name === "Saqtaý") {
+                else if(route.name === "Sóılesý") {
                     return <Ionicons 
-                        name={ focused  ? 'bookmark' : 'bookmark-outline' 
+                        name={ focused  ? 'ios-information-circle' : 'ios-information-circle-outline' 
                     } 
                         size={size} 
                         color={color} 
                     />
-                } 
+                }
                 else if(route.name === "Karta") {
                     return <Ionicons 
                         name={ focused ? 'map' : 'map-outline' 
@@ -68,7 +68,7 @@ const MainTabNavigator = ({navigation}) => {
         })}
       >
         <Tab.Screen name="Kvestter" options={{ headerShown: false }} component={MainKvestNavigator} />
-        <Tab.Screen name="Chat" component={ChatScreen} />
+        <Tab.Screen name="Sóılesý" component={ChatScreen} />
         <Tab.Screen name="Karta" component={MapScreen} />
         <Tab.Screen name="Akkaýnt" component={ProfileScreen} />
       </Tab.Navigator>

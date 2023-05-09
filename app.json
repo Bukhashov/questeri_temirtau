@@ -17,8 +17,8 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.berik2301.mobile",
-      "config" : {
-        "googleMapsApiKey" : "AIzaSyCOyjsBr32s7-qwjyJ_J4zN4xWOm2OP0gs"
+      "config": {
+        "googleMapsApiKey": "AIzaSyCOyjsBr32s7-qwjyJ_J4zN4xWOm2OP0gs"
       }
     },
     "android": {
@@ -26,15 +26,20 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "config" : {
-        "googleMaps" : {
-          "apiKey" : "AIzaSyCOyjsBr32s7-qwjyJ_J4zN4xWOm2OP0gs"
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCOyjsBr32s7-qwjyJ_J4zN4xWOm2OP0gs"
         }
       },
       "package": "com.berik2301.mobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "429fce18-e4fe-4bfb-87fd-25308ae2718e"
+      }
     }
   }
 }
