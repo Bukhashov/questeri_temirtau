@@ -15,7 +15,6 @@ const EducationalsScreen = ({navigation}) => {
         try {
             await axios.get(`${config.API_URI}/edu/get/all`).then(res => {
                 setContainers(res.data);
-                console.log(res.data);
                 setLoading(false);
             })        
         }
@@ -44,7 +43,7 @@ const EducationalsScreen = ({navigation}) => {
                             {
                                 containers.map((vel) => (                                    
                                         <TouchableOpacity 
-                                            key={"questeries_educationls_container"+vel.id}
+                                            key={"questeries_educationls_container"+vel._id}
                                             onPress={() => navigation.navigate("Educational", {
                                                 content: {
                                                     id: vel._id

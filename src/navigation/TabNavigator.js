@@ -32,7 +32,7 @@ const MainTabNavigator = ({navigation}) => {
             tabBarIcon: ({ focused, color, size }) => {
                 if(route.name === "Kvestter") {
                     return <Ionicons 
-                        name={ focused ? 'ios-information-circle' : 'ios-information-circle-outline' 
+                        name={ focused ? 'home' : 'home-outline' 
                     }
                         size={size} 
                         color={color} 
@@ -65,6 +65,13 @@ const MainTabNavigator = ({navigation}) => {
             },
             tabBarInactiveTintColor: 'black',
             tabBarActiveTintColor: 'black',
+            tabBarStyle: {
+                borderRadius: 20,
+                paddingBottom: 5,
+                margin: 12,
+                height: 65,
+            },
+            
         })}
       >
         <Tab.Screen name="Kvestter" options={{ headerShown: false }} component={MainKvestNavigator} />

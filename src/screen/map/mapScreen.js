@@ -43,10 +43,30 @@ const MapScreen = ({navigation}) => {
 
     return (
         <MapView
-            style={{flex: 1}}
-            provider={PROVIDER_GOOGLE}
-            showsUserLocation={true}
+                style={{flex: 1, position: 'relative', width: width, height: height}}
+                provider={PROVIDER_GOOGLE}
+                showsUserLocation
+                initialRegion={{
+                    latitude: 49.807585,
+                    longitude:  73.084114,
+                    latitudeDelta: 0.0922,
+                    longitudeDelta: 0.0421,
+        }}
+
+            // region={ mapRegion }
+            // initialRegion={{
+            //     "latitude": 39.97343096953564,
+            //     "latitudeDelta": 0.0922,
+            //     "longitude": -75.12520805829233,
+            //     "longitudeDelta": 0.0421,
+            // }}
+            // onRegionChange={ region => setRegion( region )}
         >
+            {/* <Marker
+                title="YIKES, Inc."
+                description="Web Design and Development"
+                coordinate={{"latitude":39.969183,"longitude":-75.133308}}
+            /> */}
         </MapView>
     )
 }

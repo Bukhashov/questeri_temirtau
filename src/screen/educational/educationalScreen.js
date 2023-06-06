@@ -37,7 +37,8 @@ const EducationalScreen = (props) => {
                     size="large" 
                     color="#000" 
                     style={{flex: 1, justifyContent: 'center', flexDirection: 'row', justifyContent: 'space-around', paddingTop: 25, }} />
-                ) : (
+                ) 
+                : (
                     <SafeAreaView>
                         <ScrollView horizontal={false} showsHorizontalScrollIndicator={false}>
                             <View>
@@ -50,6 +51,18 @@ const EducationalScreen = (props) => {
                                 <View style={{ width: width, paddingHorizontal: 15,}}>
                                     <Text>{content.description}</Text>
                                 </View>
+                            </View>
+                            
+                            <View style={{ paddingTop: 20, display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                <View style={{ width: width-20, height: 3, backgroundColor: "#000", }}></View>
+                            </View>
+                            <View style={{ padding: 15, display: 'flex', flexDirection: 'row' }}><Text>URL: </Text><Text>{content.url}</Text></View>
+                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                <View style={{ width: width-20, height: 3, backgroundColor: "#000", }}></View>
+                            </View>
+                            <View style={{ padding: 15, display: 'flex', flexDirection: 'row' }}><Text>Instagram: </Text><Text>{content.instagram}</Text></View>
+                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                <View style={{ width: width-20, height: 3, backgroundColor: "#000", }}></View>
                             </View>
                         </ScrollView>
                     </SafeAreaView>

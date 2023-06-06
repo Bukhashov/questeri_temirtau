@@ -20,14 +20,14 @@ const ContainerComponent = (props) => {
         })}>
             <View style={{ padding: 5, display:'flex', flexDirection:'row', width: width-180 }}>
             <View style={{ margin: 5 }}>
-                <Image style={{ width: 160, height: 200 }} source={{uri: props.images[1]}} />
+                <Image style={{ width: 160, height: 200 }} source={{uri: props.images[0]}} />
             </View>            
             <View style={{marginRight: 0}}>
                 <View>
-                    <Text style={{fontSize: 20, marginLeft: 2, marginTop: 5, marginBottom: 8}}>{props.title}</Text>
+                    <Text numberOfLines={1} style={{fontSize: 20, marginLeft: 2, marginTop: 5, marginBottom: 8}}>{props.title}</Text>
                 </View>
                 <View>
-                    <Text style={{fontSize: 10, marginBottom: 5}} >{props.description}</Text>
+                    <Text numberOfLines={7} style={{fontSize: 10, marginBottom: 5}} >{props.description}</Text>
                 </View>
                 <View style={{display: 'flex', flexDirection: 'row', justifyContent:'space-between'}}>
                     <Text>Price: </Text>
